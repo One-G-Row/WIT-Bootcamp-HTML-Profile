@@ -1,7 +1,7 @@
 # Assignment Title: Build Your First HTML Profile & Contact Page
 ## Instructions:
-### Create index.html (personal profile page)
-### Use semantic HTML (<header>, <main>, <section>, <footer>)
+### Create index.html personal profile page
+### Use semantic HTML <header>, <main>, <section>, <footer>
 ### Add headings, paragraphs, lists, images, and a table
 ### Include a short bio, your skills, and progress table
 ### Create contact.html (contact form)
