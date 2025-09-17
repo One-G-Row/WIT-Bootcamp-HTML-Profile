@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+       <header id="contact-nav" style="color: #fff; ">
+        <!-- <h1><a href="https://www.linkedin.com/in/faith-kimaru-b49b8094/" target="_blank"rel="noopener" >Faith Wanjiru</a></h1> -->
+        <nav >
+            <a href="index.html">Home</a> 
+            
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <form id="contact">
+                <fieldset style=" display: flex; flex-direction: column; align-items: center; box-sizing: border-box; border: 1px solid gray; padding: 10px 10px 30px 10px; margin-bottom: 40px;">
+                <legend style="text-align: center; padding-top: 10px;"><strong>Contact Me</strong></legend>
+                <label for="fname"><b>First Name:</b></label>
+                <input type="text" id="fname" placeholder="First Name" style="margin-bottom: 20px; width: 50vw; height: 3vw;" maxlength="30"; pattern=""; required/>
+                <label for="lname"><b>Last Name:</b></label>
+                <input type="text" id="lname" placeholder="Last Name" style="margin-bottom: 20px; width: 50vw; height: 3vw;" maxlength="30"; pattern=""; required/>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" placeholder="Email" style="margin-bottom: 20px; width: 50vw; height: 3vw;" maxlength="30"; pattern=""; required/>
+                <label for="subject"><b>Country:</b></label>
+                <select type="dropdown" id="location" placeholder="Location" style="margin-bottom: 20px; width: 50vw; height: 3vw;" required>
+                    <option value="one">Country</option>
+                    <option value="two">Kenya</option>
+                    <option value="three">Outside Kenya</option>
+                </select>
+                <section style="display: flex; flex-direction: row; align-items: center; gap: 10px; margin-top: 10px; margin-bottom: 10px;">
+                
+                <span><b>Inquiry</b></span><input type="radio" id="subject" style="margin-right: 50px;"/>
+                <span><b>Feedback</b></span><input type="radio" id="subject" style="margin-right: 50px;" />
+                <span><b>Job</b></span><input type="radio" id="subject" />
+                </section>
+
+                <label for="Message"><b>Message</b></label>
+                <textarea type="text" id="message" placeholder="Enter your message here" style="margin-bottom: 20px; width: 50vw; height: 10vw;" maxlength="250"; pattern=""; required></textarea>
+                <button id="submit" type="submit" style="margin-bottom: 20px; width: 20vw; height: 4vw; border: none; border-radius: 20px;"><b>Submit</b></button>
+                </fieldset>
+    </form>
+    <footer id="contact-footer" style="background-color: #0A0A0A; color: #fff;" >
+            <p style="text-align:center;">&copy;2025 Faith Wanjiru.All rights reserved.</p>
+    </footer>
+</body>
+</html>
