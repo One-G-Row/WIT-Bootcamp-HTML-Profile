@@ -264,3 +264,9 @@ footer{
     width: 100vw;
     margin-top: 2rem;
 }
+
+/* @media (max-width: 480px){
+    aside{
+        display: none;
+    }
+} */
