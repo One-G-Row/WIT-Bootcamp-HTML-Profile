@@ -22,7 +22,7 @@ body{
     background: #0A0A0A;
 }
 50%{
-    background: linear-gradient(to bottom right, #0A0A0A, #000, #0A0A0A,  #9412ad 5%, #000, #0A0A0A, #000, #0A0A0A, #ee1d1d 5%, #0A0A0A, #0A0A0A, #ee1d1d);
+    background: linear-gradient(to bottom right, #0A0A0A, #000, #0A0A0A,  #9412ad 5%, #000, #0A0A0A, #000, #0A0A0A, #DC143C 5%, #0A0A0A, #0A0A0A, #DC143C);
 }
 }
 
@@ -38,7 +38,7 @@ nav a{
     font-size: 1.2em;
     color: #fff;
     position: relative;
-    left: 25vw;
+    left: 20vw;
     border: 1px solid #fff;
     padding: 5px;
     border-left: none;
@@ -247,6 +247,101 @@ a{
     color: #fff;
 }
 
+/* project-one-images container */
+#project-one-images{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 2rem;
+}
+
+#project-one-images img{
+ width: 35vw;
+}
+
+#project-one-images img:hover{
+ width: 75vw;
+ z-index: 1;
+ height: 85vh;
+}
+
+#project-one-images:nth-child(2) img:hover{
+width: 75vw;
+position: absolute;
+top: 115vh;
+left: 22vw;
+z-index: 2;
+height: 95vh;
+}
+
+#project-one-images:has(img:hover) .cancel-project {
+    display: block;
+    z-index: 4;
+    position: absolute;
+    top: 120vh;
+    left: 90vw;
+    color: #fff;
+    background: #9412ad;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+
+
+/* project-two-images container */
+#project-two-images{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 2rem;
+}
+
+#project-two-images img{
+ width: 35vw;
+}
+
+#project-two-images img:hover{
+ width: 75vw;
+ z-index: 1;
+ height: 85vh;
+}
+
+#project-two-images:nth-child(2) img:hover{
+transition: scale(i, 1);
+width: 75vw;
+position: absolute;
+top: 192vh;
+left: 22vw;
+z-index: 3;
+height: 98vh;
+}
+
+.cancel-project{
+    display: none;
+}
+
+
+/* access cancel button once you hover over project card */
+#project-two-images:has(img:hover) .cancel-project {
+    display: block;
+    z-index: 4;
+    position: absolute;
+    top: 198vh;
+    left: 90vw;
+    color: #000;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+
+#project-two-images img:hover{
+ width: 85vw;
+}
 
 /* footer element */
 footer{
