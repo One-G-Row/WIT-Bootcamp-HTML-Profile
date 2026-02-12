@@ -1,5 +1,6 @@
 html{
    background: #0A0A0A; 
+   /* background: #313647; */
 }
 
 body{
@@ -66,7 +67,7 @@ article{
 }
 
 article:hover{
-transform: scale(1.05, 1.15);
+transform: scale(1.04, 1.15);
 margin-left:0;
 }
 
@@ -89,7 +90,7 @@ article h3:hover{
 }
 
 #skills:hover{
-transform: scale(1.02, 1.15);
+transform: scale(1.04, 1.15);
 margin-left:0;
 }
 
@@ -235,6 +236,21 @@ a{
     margin-left: 3px;
 }
 
+/* email icon */
+span a #email-icon{
+display: inline-flex;
+}
+
+#email-icon{
+    width: 45px;
+    height: auto; 
+    justify-content: center;
+    align-items: bottom;
+    
+}
+
+
+
 #contact-details h3, a:hover{
     text-decoration: underline;
 }
@@ -267,20 +283,20 @@ a{
 }
 
 #project-one-images:nth-child(2) img:hover{
-width: 75vw;
+width: 78vw;
 position: absolute;
-top: 115vh;
-left: 22vw;
+top: 120vh;
+left: 21vw;
 z-index: 2;
-height: 95vh;
+height: 100vh;
 }
 
 #project-one-images:has(img:hover) .cancel-project {
     display: block;
     z-index: 4;
     position: absolute;
-    top: 120vh;
-    left: 90vw;
+    top: 125vh;
+    left: 92vw;
     color: #fff;
     background: #9412ad;
     border: 1px solid gray;
@@ -310,13 +326,13 @@ height: 95vh;
 }
 
 #project-two-images:nth-child(2) img:hover{
-transition: scale(i, 1);
-width: 75vw;
+transition: scale(1, 1);
+width: 78vw;
 position: absolute;
 top: 192vh;
-left: 22vw;
+left: 21vw;
 z-index: 3;
-height: 98vh;
+height: 100vh;
 }
 
 .cancel-project{
@@ -330,7 +346,7 @@ height: 98vh;
     z-index: 4;
     position: absolute;
     top: 198vh;
-    left: 90vw;
+    left: 92vw;
     color: #000;
     background: #fff;
     border: 1px solid gray;
