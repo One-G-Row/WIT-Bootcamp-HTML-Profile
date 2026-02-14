@@ -18,14 +18,6 @@ body{
 } 
 
 
-@keyframes animated{
-0%{
-    background: #0A0A0A;
-}
-50%{
-    background: linear-gradient(to bottom right, #0A0A0A, #000, #0A0A0A,  #9412ad 5%, #000, #0A0A0A, #000, #0A0A0A, #DC143C 5%, #0A0A0A, #0A0A0A, #DC143C);
-}
-}
 
 /* header element */
 header{
@@ -90,7 +82,7 @@ article h3:hover{
 }
 
 #skills:hover{
-transform: scale(1.04, 1.15);
+/* transform: scale(1.04, 1.15); */
 margin-left:0;
 }
 
@@ -127,7 +119,99 @@ tbody:nth-child(odd):hover{
     color: #0A0A0A;
 }
 
+/* revamped skills to display circular graphs */
+#skills {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
 
+#skills div{
+    margin: 1rem;
+    padding: 1.5rem 3em;
+    text-align: center;
+    border-radius: 150px;
+}
+
+#skill h4{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+  width: 100px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background:
+    conic-gradient(var(--color) var(--percent), #fff 0);
+  position: relative;
+}
+
+/* inner circle (to create ring effect) */
+.skill::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: #000; /* your background */
+  border-color: #000;
+  border-radius: 50%;
+
+}
+
+.skill p{
+    font-weight: bold;
+}
+
+.skill p,
+.skill h4 {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* html */
+/* #skills div:nth-child(1){
+    border: 10px solid rgb(87, 241, 87);
+    border-right: 10px solid #fff;
+} */
+
+/* css */
+/* #skills div:nth-child(2){
+    border: 10px solid rgb(87, 136, 241);
+    border-right: 10px solid #fff;
+} */
+
+/* javascript */
+/* #skills div:nth-child(3){
+    border: 10px solid rgb(209, 191, 32);
+    border-right:  10px solid #fff;
+    border-top: 10px solid #fff;
+} */
+
+/* reactjs */
+/* #skills div:nth-child(4){
+    border: 10px solid rgb(231, 96, 18);
+    border-bottom:  10px solid #fff;
+} */
+
+/* git/ github */
+/* #skills div:nth-child(5){
+    padding: 1.5rem 3.5em;
+    border: 10px solid rgb(248, 38, 56);
+    border-right:  10px solid #fff;
+} */
 
 /* form element */
 #contact-nav{
