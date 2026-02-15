@@ -17,6 +17,8 @@ body{
     /* background: linear-gradient(to bottom right, #0A0A0A, #000, #0A0A0A,  #9412ad 5%, #000, #0A0A0A, #000, #0A0A0A, #ee1d1d 5%, #0A0A0A, #0A0A0A, #000);*/
 } 
 
+
+
 h4{
     text-decoration: underline;
 }
@@ -301,6 +303,17 @@ input, textarea, select{
 
 
 /* aside element */
+aside{
+   width: 20vw; 
+   height: 100vh; 
+   position: fixed;
+    top: 0; 
+    left: 0; 
+    background-color: #0A0A0A;
+     box-sizing: border-box;
+
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -315,7 +328,8 @@ a{
     max-width: 200px;
     max-height: 200px;
     width: 20%;
-    border-radius: 250px;
+    height: auto;
+    border-radius: 100px;
     object-fit: cover;
     margin: 30px;
 }
@@ -399,6 +413,10 @@ height: 100vh;
 }
 
 
+#project-one p{
+    width: 72vw;
+}
+
 
 /* project-two-images container */
 #project-two-images{
@@ -428,6 +446,11 @@ left: 21vw;
 z-index: 3;
 height: 100vh;
 }
+
+#project-two p{
+    width: 72vw;
+}
+
 
 .cancel-project{
     display: none;
@@ -483,8 +506,76 @@ footer{
     margin-top: 2rem;
 }
 
-/* @media (max-width: 480px){
-    aside{
-        display: none;
+@media (max-width: 480px){
+
+   aside{
+    width: 100vw;
+    margin-left: -2rem;
+     display: block;
+     /* flex-direction: row; */
+    position: relative;
+    top: 2rem;
+    left: 2rem;
     }
-} */
+
+nav a{
+   display: inline-flex;
+    left: 0;
+}
+
+#about{
+    position: relative;
+    margin-left: -2rem;
+    width: 100vw;
+    height: auto;
+}
+ 
+
+    #skills {
+    margin-left: -2rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects{
+    margin-left: -2rem;
+    width: 100vw;
+}
+
+#project-one-images{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#project-one-images img{
+    width: 95vw;
+}
+
+#project-one p{
+    width: 95vw;
+}
+
+#project-two-images{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#project-two-images img{
+    width: 95vw;
+}
+
+#project-two p{
+    width: 100vw;
+}
+}
