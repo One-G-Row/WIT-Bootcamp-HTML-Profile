@@ -17,7 +17,16 @@ body{
     /* background: linear-gradient(to bottom right, #0A0A0A, #000, #0A0A0A,  #9412ad 5%, #000, #0A0A0A, #000, #0A0A0A, #ee1d1d 5%, #0A0A0A, #0A0A0A, #000);*/
 } 
 
+h4{
+    text-decoration: underline;
+}
 
+
+
+p{
+    font-size: 18px;
+    line-height: 20px;
+}
 
 /* header element */
 header{
@@ -139,6 +148,7 @@ tbody:nth-child(odd):hover{
 #skill h4{
     display: flex;
     flex-direction: column;
+    
 }
 
 .skill {
@@ -326,7 +336,7 @@ display: inline-flex;
 }
 
 #email-icon{
-    width: 45px;
+    width: 42px;
     height: auto; 
     justify-content: center;
     align-items: bottom;
@@ -442,6 +452,19 @@ height: 100vh;
 #project-two-images img:hover{
  width: 85vw;
 }
+
+.tech-stack{
+    display: inline-flex;
+}
+
+.live-link{
+    display: inline-flex;
+}
+
+/* .tech-stack, .live-link{
+    display: flex;
+} */
+
 
 /* footer element */
 footer{
